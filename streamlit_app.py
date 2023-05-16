@@ -16,10 +16,10 @@ my_fruit_list = my_fruit_list.set_index('Fruit')
 
 # Add multiselect option to pic the fruits for smoothie
 #We want to filter the table data based on the fruits a customer will choose, so we'll pre-populate the list to set an example for the customer. 
-streamlit.multiselect('Pack some fruits:', list(my_fruit_list.index),['Avocado','Strawberries'])
+# streamlit.multiselect('Pack some fruits:', list(my_fruit_list.index),['Avocado','Strawberries'])
 
 #Display the table on the page
-streamlit.dataframe(my_fruit_list)
+# streamlit.dataframe(my_fruit_list)
 
 #show the selected fruits
 fruits_selected = streamlit.multiselect('Pack some fruits:', list(my_fruit_list.index),['Avocado','Strawberries'])
